@@ -1,0 +1,201 @@
+.homepage-container {
+  padding: 20px;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f0f7ff;
+}
+
+/* Banner with hover and slide effect */
+.banner {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  margin-bottom: 30px;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.banner-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.8s ease;
+}
+
+.banner:hover .banner-image {
+  transform: scale(1.05);
+}
+
+.fade-in {
+  animation: fadein 1s ease-in-out;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+    transform: scale(1.02);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.banner-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 25px 35px;
+  border-radius: 12px;
+}
+
+.banner-text h1 {
+  font-size: 40px;
+  margin: 0;
+  color: #ffd700;
+}
+
+.banner-text p {
+  font-size: 20px;
+  margin-top: 10px;
+  color: #ffffff;
+}
+
+.homepage-heading {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 12px;
+  color: #333;
+}
+
+.cart-info {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 16px;
+  color: #444;
+}
+
+.filter-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin: 25px 0;
+  flex-wrap: wrap;
+}
+
+.filter-section input {
+  padding: 10px 14px;
+  font-size: 16px;
+  border: 1px solid #aaa;
+  border-radius: 6px;
+  width: 280px;
+}
+
+.filter-section select {
+  padding: 10px 14px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: 1px solid #aaa;
+  background-color: #ffffff;
+}
+
+.food-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 24px;
+  padding: 10px;
+}
+
+.food-card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 16px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.food-card:hover {
+  transform: scale(1.03);
+}
+
+.food-image {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.food-name {
+  font-size: 20px;
+  margin: 10px 0 5px;
+  color: #222;
+}
+
+.food-price {
+  font-weight: bold;
+  color: #2e8b57;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.add-button {
+  padding: 10px 16px;
+  background-color: #ff7f50;
+  color: white;
+  border: none;
+  font-size: 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.add-button:hover {
+  background-color: #e06638;
+}
+
+.welcome-text {
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  color: #2c3e50;
+  margin-top: 10px;
+}
+
+.popular-badge {
+  background-color: #ff4500;
+  color: white;
+  font-size: 12px;
+  padding: 2px 6px;
+  border-radius: 4px;
+  margin-left: 8px;
+}
+
+.footer {
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 40px;
+  background-color: #e6f0ff;
+  color: #333;
+  font-size: 14px;
+  border-top: 1px solid #ccc;
+}
+
+.category-section {
+  margin-bottom: 40px;
+}
+
+.category-title {
+  font-size: 22px;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #ccc;
+  display: inline-block;
+  padding-bottom: 4px;
+}
